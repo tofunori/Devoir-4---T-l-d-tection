@@ -10,6 +10,10 @@ if %ERRORLEVEL% neq 0 (
     goto :end
 )
 
+REM Modifier le fichier pour utiliser la nouvelle bibliographie
+echo Mise à jour de la référence bibliographique dans le fichier...
+powershell -Command "(Get-Content devoir4_final_updated.tex) -replace '\\bibliography{references_corrected}', '\\bibliography{references_corrected_updated}' | Set-Content devoir4_final_updated.tex"
+
 echo Première passe pdfLaTeX...
 pdflatex devoir4_final_updated.tex
 
