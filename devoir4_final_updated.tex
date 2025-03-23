@@ -43,7 +43,7 @@ Capteurs et sources de données}
 \date{
 20 mars 2025\\
 \vspace{1cm}
-À remettre le 4 avril 2025
+
 }
 
 % Configuration des liens hypertextes
@@ -69,18 +69,18 @@ Capteurs et sources de données}
 
 \subsection{Images satellitaires 1}
 
+\textbf{Analyse d'inondations par imagerie radar Sentinel-1}
+
+L'image 1 montre les inondations catastrophiques survenues fin octobre 2024 dans la région de Valence en Espagne \citep{ESA2024}, capturées grâce au satellite Sentinel-1 de l'Agence Spatiale Européenne (ESA). 
+
+Ce satellite embarque un Radar à Synthèse d'ouverture (SAR) en bande C qui opère à une longueur d'onde d'environ 5,6 cm \citep{ESA2023}. Les images présentées ont été acquises à deux dates distinctes : le 19 octobre 2024 (avant inondation) et le 1er novembre 2024 (après inondation), avec une polarisation VV et une résolution spatiale de 10 mètres. Sentinel-1A suit une orbite héliosynchrone quasi-polaire à 693 km d'altitude, effectuant 175 orbites par cycle de répétition de 12 jours. La constellation complète, composée des satellites Sentinel-1A et Sentinel-1B partageant le même plan orbital, offre une résolution temporelle améliorée de 6 jours.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Comparaison_Inondations_Espagne.png}
     \caption{Inondations dans la région de Valence, Espagne, comparaison entre le 19 octobre et le 1er novembre 2024, captée par Sentinel-1}
     \label{fig:image1}
 \end{figure}
-
-\textbf{Analyse d'inondations par imagerie radar Sentinel-1}
-
-L'image 1 montre les inondations catastrophiques survenues fin octobre 2024 dans la région de Valence en Espagne \citep{ESA2024}, capturées grâce au satellite Sentinel-1 de l'Agence Spatiale Européenne (ESA). 
-
-Ce satellite embarque un Radar à Synthèse d'ouverture (SAR) en bande C qui opère à une longueur d'onde d'environ 5,6 cm \citep{ESA2023}. Les images présentées ont été acquises à deux dates distinctes : le 19 octobre 2024 (avant inondation) et le 1er novembre 2024 (après inondation), avec une polarisation VV et une résolution spatiale de 10 mètres. Sentinel-1A suit une orbite héliosynchrone quasi-polaire à 693 km d'altitude, effectuant 175 orbites par cycle de répétition de 12 jours. La constellation complète, composée des satellites Sentinel-1A et Sentinel-1B partageant le même plan orbital, offre une résolution temporelle améliorée de 6 jours.
 
 La technologie radar utilisée repose sur le principe de rétrodiffusion des micro-ondes. Le capteur émet des ondes polarisées qui interagissent avec la surface terrestre selon leurs propriétés diélectriques et leur rugosité. Les surfaces d'eau calme agissent comme des miroirs, réfléchissant l'onde radar loin du capteur, ce qui crée des zones très sombres (faible rétrodiffusion) sur l'image 1. À l'inverse, les zones urbaines, les structures et les embarcations produisent de multiples réflexions en coin qui renvoient fortement le signal vers le capteur, apparaissant en blanc. Les zones en gris correspondent à des terres agricoles, de la végétation ou des sols nus dont la rugosité génère une rétrodiffusion de surface modérée.
 
@@ -92,7 +92,7 @@ Un avantage majeur de la télédétection radar pour le suivi des inondations es
 
 \subsection{Images satellitaires 2}
 
-\begin{figure}[H]
+\begin{figure}[t]
     \centering
     \includegraphics[width=1\textwidth]{Volcan_LaCumbre_Rasterio_Show.png}
     \caption{Éruption du volcan La Cumbre sur l'île Fernandina, archipel des Galápagos, 7 mars 2024, captée par Landsat 8 en composition colorée 6-5-3}
@@ -105,7 +105,7 @@ L'image 2 montre l'éruption du volcan La Cumbre sur l'île Fernandina dans l'ar
 
 Ce système de télédétection, opéré conjointement par la NASA et l'USGS \citep{USGS2022}, embarque un capteur multispectral qui offre une résolution spatiale de 30 mètres pour les bandes visibles et proche infrarouge (NIR), 15 mètres pour la bande panchromatique, et 100 mètres pour les bandes thermiques (TIRS). Sa résolution spectrale est remarquable avec 11 bandes couvrant un spectre électromagnétique allant du visible à l'infrarouge thermique. Le satellite Landsat 8 suit une orbite héliosynchrone à 705 km d'altitude avec une inclinaison de 98,2 degrés, ce qui permet une couverture complète de la Terre tous les 16 jours (résolution temporelle).
 
-L'image est présentée en composition colorée 6-5-3 (SWIR-NIR-Vert), spécialement choisie pour mettre en évidence l'activité volcanique. Les coulées de lave récentes apparaissent en rouge/orange vif, conséquence directe de leur forte émission thermique captée dans la bande 6 (SWIR, 1.57-1.65 \textmu m). Cette détection s'appuie sur la loi de Planck qui régit l'émission électromagnétique des corps chauds, dont le pic d'émission se déplace vers les longueurs d'onde plus courtes à mesure que la température augmente. La technologie d'acquisition "pushbroom" employée par Landsat 8, qui représente une évolution par rapport aux scanners à miroir tournant des générations précédentes, permet de capturer des images sur une fauchée de 185 km de large en un seul passage, offrant ainsi une vue complète du phénomène volcanique.
+L'image est présentée en composition fausses couleurs 6-5-3 (SWIR-NIR-Vert), spécialement choisie pour mettre en évidence l'activité volcanique. Les coulées de lave récentes apparaissent en rouge/orange vif, conséquence directe de leur forte émission thermique captée dans la bande 6 (SWIR, 1.57-1.65 \textmu m). Cette détection s'appuie sur la loi de Planck qui régit l'émission électromagnétique des corps chauds, dont le pic d'émission se déplace vers les longueurs d'onde plus courtes à mesure que la température augmente. La technologie d'acquisition "pushbroom" utilisée par Landsat 8, représente une évolution par rapport aux scanners à miroir tournant des générations précédentes, permet de prendre des images sur une fauchée de 185 km de large en un seul passage.
 
 Dans cette composition colorée, la végétation de l'île se distingue par sa teinte vert vif, résultat de sa haute réflectance dans la bande 5 (NIR, 0.85-0.88 \textmu m). Cette forte réflexion dans le proche infrarouge est due à la structure cellulaire des feuilles et à la diffusion interne du rayonnement au sein des tissus végétaux. Le cratère central du volcan apparaît en bleu foncé/noir, traduisant l'absence de végétation et une faible réflectance dans les trois bandes utilisées. Les zones blanches visibles correspondent à des nuages ou à des émissions de vapeur et de cendres volcaniques qui réfléchissent fortement le rayonnement dans l'ensemble des bandes spectrales utilisées.
 
@@ -113,23 +113,21 @@ Cette application de la télédétection exploite les principes fondamentaux des
 
 \subsection{Proposition de mission satellitaire}
 
-\textbf{Phénomène à observer :} La surveillance des changements de la banquise arctique. Ce phénomène est crucial pour le suivi du changement climatique et particulièrement pertinent pour le Canada qui possède une grande partie du territoire arctique \citep{Derksen2019}.
+La surveillance des changements de la banquise arctique représente le phénomène central que ma mission satellitaire vise à observer. Ce phénomène est crucial pour le suivi du changement climatique et particulièrement pertinent pour le Canada qui possède une grande partie du territoire arctique \citep{Derksen2019}. Pour observer de manière efficace la banquise, je propose l'utilisation de plusieurs gammes de longueurs d'onde complémentaires. Les micro-ondes actives (radar à synthèse d'ouverture ou SAR) dans les bandes C (5,3 GHz) et X (9,6 GHz) \citep{Liu2023} permettront d'obtenir des informations détaillées sur la structure et la rugosité de la glace. Les micro-ondes passives dans la gamme 6-37 GHz \citep{Webster2023} fourniront des données importantes sur la concentration et l'étendue de la glace de mer à plus grande échelle. Enfin, l'infrarouge thermique (10-12 $\mu$m) sera utilisé pour mesurer la température de surface, un élément clé pour comprendre les processus de fonte et de regel.
 
-\textbf{Longueurs d'onde proposées :} Pour observer de manière efficace la banquise, je propose l'utilisation de plusieurs gammes de longueurs d'onde complémentaires. Les micro-ondes actives (radar à synthèse d'ouverture ou SAR) dans les bandes C (5,3 GHz) et X (9,6 GHz) \citep{Liu2023} permettront d'obtenir des informations détaillées sur la structure et la rugosité de la glace. Les micro-ondes passives dans la gamme 6-37 GHz \citep{Webster2023} fourniront des données essentielles sur la concentration et l'étendue de la glace de mer à plus grande échelle. Enfin, l'infrarouge thermique (10-12 $\mu$m) sera utilisé pour mesurer la température de surface, un paramètre clé pour comprendre les processus de fonte et de regel. Cette combinaison multi-capteurs est particulièrement adaptée aux régions polaires, car les micro-ondes peuvent pénétrer les nuages et fonctionner indépendamment des conditions d'illumination, ce qui est crucial dans l'Arctique où l'obscurité hivernale est prolongée.
-
-\textbf{Résolutions requises :} La mission GLACIES nécessite des résolutions spatiale et temporelle spécifiques pour capturer efficacement la dynamique de la banquise arctique. Pour la composante SAR, une résolution spatiale de 10-30 mètres est idéale pour obtenir des détails fins sur la structure de la glace, les fractures, et les déformations. Pour les micro-ondes passives, une résolution spatiale de 1-5 km est suffisante, permettant une couverture plus large tout en maintenant la capacité d'identifier les variations significatives de concentration de glace. En termes de résolution temporelle, un intervalle de revisite de 1-3 jours est optimal pour suivre la dynamique rapide de la banquise, particulièrement pendant les périodes critiques de fonte printanière ou de formation automnale de glace, lorsque les changements peuvent survenir en quelques jours seulement.
+La combinaison multi-capteurs est particulièrement adaptée aux régions polaires, car les micro-ondes peuvent pénétrer les nuages et fonctionner indépendamment des conditions d'éclairage, ce qui est primordial dans l'Arctique où la noirceur domine durant l'hiver. Ma mission nécessite des résolutions spatiale et temporelle cibléess pour saisir avec précision la dynamique de la banquise arctique. Pour la composante SAR, une résolution spatiale de 10-30 mètres est idéale pour obtenir des détails fins sur la structure de la glace, les fractures, et les déformations. Pour les micro-ondes passives, une résolution spatiale de 1-5 km est suffisante, permettant ainsi une couverture plus large tout en maintenant la capacité d'identifier les variations de la concentration des glaces. En termes de résolution temporelle, un intervalle de revisite de 1-3 jours est idéal pour suivre la dynamique rapide de la banquise, particulièrement pendant les périodes de fonte printanière ou de formation automnale de la glace, lorsque les changements peuvent survenir en quelques jours seulement.
 
 \subsection{Types d'orbites}
 \begin{itemize}[label=---]
-    \item \textbf{Explication des deux types d'orbite principaux :}
     
-    \item \textbf{Orbite géostationnaire (GEO):} Située à environ 36 000 km d'altitude au-dessus de l'équateur, avec une période orbitale de 24 heures synchronisée avec la rotation terrestre \citep{Weather2023, Capderou2014}. Le satellite reste fixe par rapport à un point sur Terre, permettant une observation continue d'une même région. Avantages: couverture constante d'une large zone, acquisition en temps réel. Limitations: résolution spatiale réduite due à la grande altitude, couverture inefficace des régions polaires, coût de lancement élevé. Applications: météorologie opérationnelle, télécommunications, surveillance à grande échelle.
     
-    \item \textbf{Orbite héliosynchrone (Sun-synchronous orbit ou SSO):} Type spécial d'orbite polaire ou quasi-polaire où le satellite passe au-dessus de chaque point de la Terre à la même heure locale à chaque passage. Typiquement à une altitude de 600-800 km. Avantages: conditions d'éclairement constantes facilitant la comparaison d'images dans le temps, bonne résolution spatiale, couverture globale incluant les pôles. Limitations: revisite moins fréquente pour un point donné (généralement quelques jours), acquisition non continue. Applications: cartographie, suivi environnemental, agriculture, foresterie, et la plupart des missions d'observation terrestre.
+    \item \textbf{Orbite géostationnaire (GEO):} Située à environ 36 000 km d'altitude au-dessus de l'équateur, avec une période orbitale de 24 heures synchronisée avec la rotation terrestre \citep{Weather2023,Capderou2014}. Le satellite reste fixe par rapport à un point sur Terre, ce qui permet une observation continue d'une même région. Cela offre une couverture constante d'une large zone et permet l'acquisition de données en temps réel, très utilise pour des applications comme la météorologie, les télécommunications ou la surveillance. Par contre, cette orbite présente certains désavantages: la résolution spatiale est considérablement réduite en raison de la grande altitude, la couverture des régions polaires est inefficace puisque le satellite est positionné au-dessus de l'équateur, et les coûts de lancement sont particulièrement élevés à cause l'énergie qui est nécéssaire pour atteindre cette altitude dans l'espace.
+    \vspace{1em}    
     
-    \item \textbf{Type d'orbite le mieux adapté à ma mission GLACIES :}
+    \item \textbf{Orbite héliosynchrone (Sun-synchronous orbit ou SSO):} Type d'orbite polaire ou quasi-polaire où le satellite passe au-dessus de chaque point de la Terre à la même heure locale à chaque passage. Typiquement à une altitude de 600-800 km il présente l'avantage de maintenir des conditions d'éclairement constantes, ce qui facilite grandement la comparaison d'images acquises à différentes dates. Sa relative proximité avec la surface terrestre permet d'obtenir une bonne résolution spatiale, tandis que son inclinaison assure une couverture véritablement globale incluant les régions polaires souvent négligées par d'autres types d'orbites. Toutefois, cette orbite implique également certaines contraintes, notamment une fréquence de revisite moins élevée pour un point géographique donné, généralement de l'ordre de quelques jours, ainsi qu'une acquisition de données non continue sur une zone spécifique contrairement à l'orbite. Ces caractéristiques en font actuellement l'orbite de prédilection pour de nombreuses applications telles que la cartographie, le suivi des changements climatiques, l'agriculture, la foresterie, etc.
+    \vspace{1em}
     
-    Pour la mission GLACIES de surveillance de la banquise arctique, l'orbite héliosynchrone est clairement la plus adaptée. Elle permet une couverture efficace des régions polaires, offre une résolution spatiale suffisante pour détecter les détails de la glace de mer, et fournit des conditions d'illumination constantes qui facilitent l'analyse comparative des données dans le temps. De plus, en utilisant plusieurs satellites sur la même orbite mais avec des plans orbitaux décalés (constellation), nous pouvons atteindre une revisite fréquente (1-3 jours) nécessaire pour suivre la dynamique rapide de la banquise, tout en conservant les avantages de l'orbite héliosynchrone.
+    \item \textbf{Type d'orbite le mieux adapté à ma mission :} Pour ma mission de surveillance de la banquise arctique, l'orbite héliosynchrone est clairement la plus adaptée. Elle permet une couverture efficace des régions polaires, offre une résolution spatiale suffisante pour détecter les détails de la glace de mer, et fournit des conditions d'illumination constantes qui facilitent l'analyse des données temporelles. De plus, en utilisant plusieurs satellites sur la même orbite mais décalés (constellation), nous pouvons atteindre une revisite fréquente (1-3 jours) nécessaire pour suivre la dynamique rapide de la banquise, tout en conservant les avantages de l'orbite héliosynchrone.
 \end{itemize}
 
 \subsection{Questions des médias}
@@ -140,9 +138,9 @@ Cette application de la télédétection exploite les principes fondamentaux des
     
     \item \textbf{Options de décommission du satellite :}
     
-    Deux options vraisemblables pour limiter les débris spatiaux produits par la mission GLACIES seraient :
+    Deux options vraisemblables pour limiter les débris spatiaux produits par la mission seraient :
     
-    1) La rentrée atmosphérique contrôlée, en programmant le satellite pour qu'il descende dans l'atmosphère terrestre selon une trajectoire précise. Il se désintégrerait majoritairement lors de la rentrée avec les éventuels débris tombant dans des zones océaniques inhabitées. Cette méthode est particulièrement adaptée pour les satellites en orbite basse comme ceux de la mission GLACIES.
+    1) La rentrée atmosphérique contrôlée, en programmant le satellite pour qu'il descende dans l'atmosphère terrestre selon une trajectoire précise. Il se désintégrerait majoritairement lors de la rentrée avec les éventuels débris tombant dans l'océan. Cette méthode est particulièrement adaptée pour les satellites en orbite basse comme ceux de ma mission satellitaire.
     
     2) Pour les composants qui ne se désintégreraient pas complètement, l'autre option serait de concevoir le satellite selon les principes de "Design for Demise", en utilisant des matériaux qui se consumeraient entièrement lors de la rentrée atmosphérique \citep{NASA2023, IADC2020} et en intégrant des mécanismes de passivation (vidange des réservoirs, décharge des batteries) conformément aux directives internationales de mitigation des débris spatiaux \citep{Dutta2022}.
 \end{itemize}
@@ -167,7 +165,5 @@ Les images et analyses présentées dans ce rapport ont été réalisées à l'a
     \item Code pour l'analyse de l'éruption volcanique La Cumbre (Landsat 8): 
     \url{https://code.earthengine.google.com/?scriptPath=users/thierry-laurent/teledetection:volcan_lacumbre_galapagos}
 \end{itemize}
-
-Notes : Les URL ci-dessus sont des exemples. Vous pouvez les remplacer par les liens réels vers vos scripts Google Earth Engine.
 
 \end{document}
